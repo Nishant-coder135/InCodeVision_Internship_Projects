@@ -1,4 +1,4 @@
-\# InCodeVision Machine Learning Internship Portfolio
+# InCodeVision Machine Learning Internship Portfolio
 
 
 
@@ -10,40 +10,40 @@ Rather than relying on default configuration templates, my focus throughout this
 
 
 
-\-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 
 
-\# Project Roadmap \& Deliverables
+# Project Roadmap & Deliverables
 
 
 
-\# Project 1: Production-Grade Spam Email Classifier Web Application
+# Project 1: Production-Grade Spam Email Classifier Web Application
 
 * Core Focus: Natural Language Processing (NLP), text tokenization, and vector space transformations.
-* Implementations: Designed a text cleansing function utilizing regular expressions ('\[^a-zA-Z\\s]') to strip punctuation, uppercase variance, and numeric noise. Implemented TF-IDF vectorization capped at 3,000 top vocabulary terms, fitting parameters strictly on training splits to prevent data leakage. Trained a Multinomial Naive Bayes classifier that accounts for the mild 76/24 dataset imbalance via built-in class priors.
+* Implementations: Designed a text cleansing function utilizing regular expressions ('[^a-zA-Z\s]') to strip punctuation, uppercase variance, and numeric noise. Implemented TF-IDF vectorization capped at 3,000 top vocabulary terms, fitting parameters strictly on training splits to prevent data leakage. Trained a Multinomial Naive Bayes classifier that accounts for the mild 76/24 dataset imbalance via built-in class priors.
 * Key Metrics: 98.00% Global Accuracy | 0.98 Spam Precision | 0.94 Spam Recall (0.96 F1-Score).
-* Deliverables: A standalone, fully interactive Streamlit web application ('app.py') that ingests raw user text blocks in real time, processes tokens through the identical cleaning pipeline, and extracts classification probabilities via '.predict\_proba()' to render dynamic confidence score cards.
+* Deliverables: A standalone, fully interactive Streamlit web application ('app.py') that ingests raw user text blocks in real time, processes tokens through the identical cleaning pipeline, and extracts classification probabilities via '.predict_proba()' to render dynamic confidence score cards.
 
 
 
-\# Project 2: Customer Churn Prediction Engine \[Ongoing Project]
+# Project 2: Customer Churn Prediction Engine [Ongoing Project]
 
 * Core Focus: Tabular behavioral analytics, feature interaction tracking, and leakage-proof preprocessing matrices.
 
 
 
-\-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 
 
-\# Repository Directory Layout
+# Repository Directory Layout
 
 
 
 ```text
 
-InCodeVision\_Internship\_Projects/
+InCodeVision_Internship_Projects/
 
 │
 
@@ -57,27 +57,27 @@ InCodeVision\_Internship\_Projects/
 
 └── Project-01/
 
-&#x20;   └── Spam Email Classifier/
+   └── Spam Email Classifier/
 
-&#x20;       ├── data/                      # Isolated Text Data Segment Storage
+       ├── data/                      # Isolated Text Data Segment Storage
 
-&#x20;       ├── model/                     # Serialized Pipeline Payload Directory
+       ├── model/                     # Serialized Pipeline Payload Directory
 
-&#x20;       ├── notebook/                  # Operational Preprocessing \& Training Workspaces
+       ├── notebook/                  # Operational Preprocessing & Training Workspaces
 
-&#x20;       ├── app.py                     # Streamlit User Interface Script
+       ├── app.py                     # Streamlit User Interface Script
 
-&#x20;       └── requirements.txt           # Local Dependency Checklist
+       └── requirements.txt           # Local Dependency Checklist
 
 ```
 
 
 
-\-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 
 
-\# Global Setup \& Running the Application
+# Global Setup & Running the Application
 
 
 
@@ -85,39 +85,39 @@ To safeguard against environment cross-contamination and ensure isolated executi
 
 
 
-\# 1. Clone the Portfolio Workspace
+# 1. Clone the Portfolio Workspace
 
 ```bash
 
-git clone https://github.com/Nishant-coder135/InCodeVision\_Internship\_Projects
+git clone https://github.com/Nishant-coder135/InCodeVision_Internship_Projects
 
-cd InCodeVision\_Internship\_Projects
+cd InCodeVision_Internship_Projects
 
 ```
 
 
 
-\# 2. Configure a Unified Virtual Environment
+# 2. Configure a Unified Virtual Environment
 
 Initialize and activate a single, clean workspace environment container at the absolute root folder path:
 
 ```bash
 
-\# Initialize the virtual environment directory structure
+# Initialize the virtual environment directory structure
 
 python -m venv .venv
 
 
 
-\# Activate the isolated environment layer (Windows OS)
+# Activate the isolated environment layer (Windows OS)
 
-.venv\\Scripts\\activate
+.venv\Scripts\activate
 
 ```
 
 
 
-\# 3. Install Sub-Project Specific Dependencies
+# 3. Install Sub-Project Specific Dependencies
 
 Navigate directly into the target project folder and run the localized installer to download the precise libraries required for that specific build:
 
@@ -131,7 +131,7 @@ pip install -r requirements.txt
 
 
 
-\# 4. Launch the Live Streamlit Web Interface
+# 4. Launch the Live Streamlit Web Interface
 
 Run the localized user interface dashboard code locally on your high-speed development server:
 
