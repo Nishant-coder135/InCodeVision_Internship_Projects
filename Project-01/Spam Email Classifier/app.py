@@ -6,8 +6,8 @@ import streamlit as st
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
 # Ingesting payloads
-vectorizer=joblib.load(r"C:\Users\hp\OneDrive\Desktop\InCodeVision Internship Projects\Project-01\Spam Email Classifier\model\text_vectorizer.joblib")
-model_payloads=joblib.load(r"C:\Users\hp\OneDrive\Desktop\InCodeVision Internship Projects\Project-01\Spam Email Classifier\model\spam_classifier.joblib")
+vectorizer=joblib.load("model/text_vectorizer.joblib")
+model_payloads=joblib.load("model/spam_classifier.joblib")
 classifier=model_payloads['classifier']
 
 # Convert library stop_words into set
