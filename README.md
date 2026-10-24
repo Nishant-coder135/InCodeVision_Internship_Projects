@@ -10,7 +10,7 @@ Rather than relying on default configuration templates, my focus throughout this
 
 
 
-\---------------------------------------------------------------------------------------------------------------------------------
+\-----------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -33,7 +33,7 @@ Rather than relying on default configuration templates, my focus throughout this
 
 
 
-\---------------------------------------------------------------------------------------------------------------------------------
+\-----------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -73,7 +73,7 @@ InCodeVision\_Internship\_Projects/
 
 
 
-\---------------------------------------------------------------------------------------------------------------------------------
+\-----------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -89,7 +89,7 @@ To safeguard against environment cross-contamination and ensure isolated executi
 
 ```bash
 
-git clone https://github.com
+git clone https://github.com/Nishant-coder135/InCodeVision\_Internship\_Projects
 
 cd InCodeVision\_Internship\_Projects
 
@@ -97,7 +97,7 @@ cd InCodeVision\_Internship\_Projects
 
 
 
-\### 2. Configure a Unified Virtual Environment
+\# 2. Configure a Unified Virtual Environment
 
 Initialize and activate a single, clean workspace environment container at the absolute root folder path:
 
@@ -117,7 +117,7 @@ python -m venv .venv
 
 
 
-\### 3. Install Sub-Project Specific Dependencies
+\# 3. Install Sub-Project Specific Dependencies
 
 Navigate directly into the target project folder and run the localized installer to download the precise libraries required for that specific build:
 
@@ -131,7 +131,7 @@ pip install -r requirements.txt
 
 
 
-\### 4. Launch the Live Streamlit Web Interface
+\# 4. Launch the Live Streamlit Web Interface
 
 Run the localized user interface dashboard code locally on your high-speed development server:
 
