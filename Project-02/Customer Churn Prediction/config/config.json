@@ -1,0 +1,59 @@
+{
+    "project_metadata": {
+        "name": "Customer Churn Predictor",
+        "random_state": 42
+    },
+    "file_paths": {
+        "raw_data_path": "data/raw_data/Customer Churn.csv",
+        "sweetviz_html_path": "../notebooks/raw_customer_churn_profile.html"
+    },
+    "data_schemas": {
+        "target_variable": "Churn",
+        "numerical_features": [
+            "Status",
+            "Seconds of Use",
+            "Customer Value",
+            "Complains",
+            "Subscription  Length",
+            "Distinct Called Numbers",
+            "Frequency of SMS",
+            "Call  Failure"
+        ],
+        "categorical_features": [],
+        "dropped_features": [
+            "Charge  Amount",
+            "Frequency of use",
+            "Tariff Plan",
+            "Age",
+            "Age Group",
+            "Status"
+        ]
+    },
+    "preprocessing_parameters": {
+        "robust_scaler_features": [
+            "Call  Failure",
+            "Complains",
+            "Subscription  Length",
+            "Charge  Amount",
+            "Seconds of Use",
+            "Frequency of SMS",
+            "Distinct Called Numbers",
+            "Tariff Plan",
+            "Customer Value"
+        ],
+        "standard_scaler_features": [
+            "Age Group"
+        ]
+    },
+    "inference_settings": {
+        "default_decision_threshold": 0.5400933017072422
+    },
+    "model_hyperparameters": {
+        "algorithm": "RandomForestClassifier",
+        "best_params": {
+            "max_depth": null,
+            "min_samples_leaf": 2,
+            "n_estimators": 200
+        }
+    }
+}
